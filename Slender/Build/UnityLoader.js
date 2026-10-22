@@ -2292,7 +2292,7 @@ var UnityLoader = UnityLoader || {
                 Jobs: {},
                 buildDownloadProgress: {},
                 resolveBuildUrl: function(e) {
-                    if (e.endsWith("MILKMAN.data.unityweb")) {
+                    if (e.endsWith("Build.data.unityweb")) {
                         return window.dataUrll;
                     }
                     return e.match(/(http|https|ftp|file):\/\//) ? e : "Build/"+e
